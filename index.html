@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أبو مصطفى للدهانات والديكورات والترميمات والعوازل</title>
+    <meta name="description" content="أبو مصطفى للدهانات والديكورات والترميمات والعوازل وأبوكسي أرضيات وورق الجدران - مكة المكرمة وجدة والطائف">
+    <meta name="keywords" content="دهانات, ديكورات, ترميم, عوازل, أبوكسي أرضيات, ورق جدران, جبس بورد, أسمنت بورد, مرايات, تكسيات, بديل رخام, بديل خشب, شاشات تلفزيون, درج, طاولات, مكة المكرمة, جدة, الطائف">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for Arabic text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #d4af37; /* ذهبي */
+            --secondary-color: #8b4513; /* بني خشبي */
+            --accent-color: #c19a6b; /* بني فاتح */
+            --light-color: #f5f5f5;
+            --dark-color: #2c1810; /* بني داكن */
+            --success-color: #27ae60;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background-color: #fefefe;
+            background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=1000');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--dark-color);
+            background-image: linear-gradient(135deg, var(--dark-color) 0%, #3d2b1f 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 2rem;
+            margin-right: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        
+        .contact-info i {
+            margin-left: 5px;
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 24, 16, 0.85), rgba(60, 40, 30, 0.85)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000') no-repeat center center/cover;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            color: var(--primary-color);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary-color), #e6c158);
+            color: var(--dark-color);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, #e6c158, var(--primary-color));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        }
+        
+        /* News Ticker */
+        .news-ticker {
+            background-color: var(--secondary-color);
+            background-image: linear-gradient(90deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .ticker-container {
+            overflow: hidden;
+        }
+        
+        .ticker-content {
+            display: flex;
+            animation: ticker 30s linear infinite;
+            white-space: nowrap;
+        }
+        
+        .ticker-content span {
+            padding: 0 40px;
+            font-size: 1.1rem;
+        }
+        
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            border-radius: 2px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            color: var(--dark-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .service-content p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 0;
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 200px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+            box-shadow: var(--shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Videos Section */
+        .videos {
+            padding: 80px 0;
+        }
+        
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .video-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .video-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-item iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        
+        .video-caption {
+            padding: 15px;
+        }
+        
+        .video-caption h3 {
+            color: var(--dark-color);
+            font-size: 1.2rem;
+        }
+        
+        /* Location Section */
+        .location {
+            padding: 80px 0;
+        }
+        
+        .location-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .location-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .location-map {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            background-color: #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            position: relative;
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .testimonial-card::before {
+            content: """;
+            font-size: 80px;
+            color: var(--primary-color);
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            opacity: 0.2;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+        }
+        
+        .faq-item {
+            background-color: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background: linear-gradient(90deg, var(--dark-color) 0%, #3d2b1f 100%);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        /* Yemen Bot Section */
+        .yemen-bot {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #3d2b1f 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .yemen-bot h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .yemen-bot p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .yemen-bot .small-text {
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+        
+        .yemen-bot .small-text a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .yemen-bot .small-text a:hover {
+            text-decoration: underline;
+            color: #e6c158;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #3d2b1f 100%);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+            bottom: 0;
+            right: 0;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        /* Social Media Fixed Buttons - Left Side */
+        .social-fixed-left {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            gap: 10px;
+        }
+        
+        .social-fixed-left a {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-fixed-left a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+        
+        .social-fixed-left a:hover::before {
+            transform: translateX(0);
+        }
+        
+        .social-fixed-left a:hover {
+            transform: translateX(5px) scale(1.1);
+        }
+        
+        /* Tooltip on hover */
+        .social-fixed-left a .tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(44, 24, 16, 0.9);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-fixed-left a .tooltip::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent rgba(44, 24, 16, 0.9);
+        }
+        
+        .social-fixed-left a:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+        
+        /* Social Media Colors */
+        .social-fixed-left .instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+        
+        .social-fixed-left .tiktok {
+            background: linear-gradient(45deg, #000000, #25F4EE, #FE2C55);
+        }
+        
+        .social-fixed-left .haraj {
+            background: linear-gradient(45deg, #f15a24, #f37021);
+        }
+        
+        .social-fixed-left .kwai {
+            background: linear-gradient(45deg, #FF6600, #FF9900);
+        }
+        
+        .social-fixed-left .whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+        
+        .social-fixed-left .phone {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+        }
+        
+        /* Social Media Mobile View */
+        .social-fixed-mobile {
+            display: none;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .social-fixed-mobile a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        
+        .social-fixed-mobile a:hover {
+            transform: scale(1.1);
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Call Button */
+        .call-btn {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        
+        .call-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Date and Time */
+        .date-time {
+            background: linear-gradient(90deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 160px;
+            right: 20px;
+            background-color: var(--dark-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: transform 0.3s;
+            cursor: pointer;
+            display: none;
+        }
+        
+        .back-to-top:hover {
+            transform: scale(1.1);
+            background-color: var(--primary-color);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .contact-info {
+                margin-top: 15px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .whatsapp-btn, .call-btn, .back-to-top {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+            
+            .whatsapp-btn {
+                bottom: 100px;
+                right: 15px;
+            }
+            
+            .call-btn {
+                bottom: 155px;
+                right: 15px;
+            }
+            
+            .back-to-top {
+                bottom: 210px;
+                right: 15px;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .social-fixed-left {
+                display: none;
+            }
+            
+            .social-fixed-mobile {
+                display: flex;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .social-fixed-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>أبو مصطفى للدهانات والديكورات</h1>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#gallery">معرض الأعمال</a></li>
+                        <li><a href="#videos">فيديوهات</a></li>
+                        <li><a href="#testimonials">آراء العملاء</a></li>
+                        <li><a href="#location">منطقة الخدمة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="contact-info">
+                    <a href="tel:+966508925576">
+                        <i class="fas fa-phone"></i>
+                        +966508925576
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fixed Social Media Buttons - Left Side -->
+    <div class="social-fixed-left">
+        <a href="https://www.instagram.com/abumst4?igsh=MTQ3YTJkZWp5YXMzOA==" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i>
+            <span class="tooltip">إنستجرام</span>
+        </a>
+        
+        <a href="https://www.tiktok.com/@abdu_5576?_r=1&_t=ZS-931CHsoZnRw" target="_blank" class="tiktok">
+            <i class="fab fa-tiktok"></i>
+            <span class="tooltip">تيك توك</span>
+        </a>
+        
+        <a href="https://haraj.com.sa/shared-post/019b7ad0-23fd-7e11-a10f-c804f201764d/" target="_blank" class="haraj">
+            <i class="fas fa-store"></i>
+            <span class="tooltip">حراج</span>
+        </a>
+        
+        <a href="https://k.kwai.com/u/@sfiun331/uucyCvic" target="_blank" class="kwai">
+            <i class="fas fa-video"></i>
+            <span class="tooltip">كواي</span>
+        </a>
+        
+        <a href="https://wa.me/966508925576?text=مرحباً، أريد الاستفسار عن خدماتكم - تم تحويلي عبر موقع أبو مصطفى للدهانات والديكورات" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="tooltip">واتساب</span>
+        </a>
+        
+        <a href="tel:+966508925576" class="phone">
+            <i class="fas fa-phone"></i>
+            <span class="tooltip">اتصال</span>
+        </a>
+    </div>
+
+    <!-- Date and Time -->
+    <div class="date-time">
+        <div class="container">
+            <div id="current-date-time"></div>
+        </div>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-container">
+            <div class="ticker-content">
+                <span>دهانات داخلية وخارجية بجودة عالية</span>
+                <span>توريد وتركيب ورق الجدران</span>
+                <span>أعمال الجبس بورد والأسمنت بورد</span>
+                <span>تركيب المرايا والتكسيات</span>
+                <span>بديل الرخام والخشب</span>
+                <span>شاشات تلفزيون مدمجة</span>
+                <span>تصميم وتركيب الدرج والطاولات</span>
+                <span>أعمال الترميم الشامل</span>
+                <span>عوازل مائية وحرارية</span>
+                <span>أرضيات الإيبوكسي المتينة</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>أبو مصطفى للدهانات والديكورات والترميمات</h2>
+            <p>نقدم خدمات متكاملة في مجال الدهانات والديكورات والترميمات والعوازل وأبوكسي الأرضيات وورق الجدران بجودة عالية وأسعار منافسة</p>
+            <p><strong>تواجدنا رسمياً: مكة المكرمة - جدة - الطائف</strong></p>
+            <a href="#contact" class="btn">اطلب خدمتك الآن</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>خدماتنا</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="painting.jpg" alt="الدهانات الداخلية والخارجية" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-paint-roller\' style=\'font-size: 60px; color: #d4af37;\'></i><br>الدهانات الداخلية والخارجية';">
+                    </div>
+                    <div class="service-content">
+                        <h3>الدهانات الداخلية والخارجية</h3>
+                        <p>نقدم خدمات الدهانات الداخلية والخارجية بجودة عالية وألوان متنوعة تناسب جميع الأذواق</p>
+                        <a href="#" class="btn whatsapp-service" data-service="الدهانات الداخلية والخارجية">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="renovation.jpg" alt="أعمال الترميم" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-tools\' style=\'font-size: 60px; color: #d4af37;\'></i><br>أعمال الترميم';">
+                    </div>
+                    <div class="service-content">
+                        <h3>أعمال الترميم</h3>
+                        <p>ترميم شامل للمباني والشقق والفلل مع استخدام أحدث التقنيات والمواد</p>
+                        <a href="#" class="btn whatsapp-service" data-service="أعمال الترميم">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="decorations.jpg" alt="الديكورات" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-couch\' style=\'font-size: 60px; color: #d4af37;\'></i><br>الديكورات';">
+                    </div>
+                    <div class="service-content">
+                        <h3>الديكورات</h3>
+                        <p>تصميم وتنفيذ ديكورات مبتكرة تناسب المساحات المختلفة وتعكس شخصيتك</p>
+                        <a href="#" class="btn whatsapp-service" data-service="الديكورات">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="wallpaper.jpg" alt="ورق الجدران" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-paste\' style=\'font-size: 60px; color: #d4af37;\'></i><br>ورق الجدران';">
+                    </div>
+                    <div class="service-content">
+                        <h3>ورق الجدران</h3>
+                        <p>توريد وتركيب ورق جدران عالي الجودة بمجموعة واسعة من التصاميم العصرية</p>
+                        <a href="#" class="btn whatsapp-service" data-service="ورق الجدران">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="gypsum.jpg" alt="الجبس بورد والأسمنت بورد" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-border-style\' style=\'font-size: 60px; color: #d4af37;\'></i><br>الجبس بورد والأسمنت بورد';">
+                    </div>
+                    <div class="service-content">
+                        <h3>الجبس بورد والأسمنت بورد</h3>
+                        <p>تركيب وتصميم أسقف وجدران من الجبس بورد والأسمنت بورد بمهارة واحترافية</p>
+                        <a href="#" class="btn whatsapp-service" data-service="الجبس بورد والأسمنت بورد">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="mirrors.jpg" alt="المرايا والتكسيات" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-mirror\' style=\'font-size: 60px; color: #d4af37;\'></i><br>المرايا والتكسيات';">
+                    </div>
+                    <div class="service-content">
+                        <h3>المرايا والتكسيات</h3>
+                        <p>تركيب مرايا وتكسيات بديلة للرخام والخشب بتصاميم عصرية وجذابة</p>
+                        <a href="#" class="btn whatsapp-service" data-service="المرايا والتكسيات">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="tv.jpg" alt="شاشات تلفزيون مدمجة" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-tv\' style=\'font-size: 60px; color: #d4af37;\'></i><br>شاشات تلفزيون مدمجة';">
+                    </div>
+                    <div class="service-content">
+                        <h3>شاشات تلفزيون مدمجة</h3>
+                        <p>تصميم وتركيب شاشات تلفزيون مدمجة في الجدران والديكورات بشكل أنيق</p>
+                        <a href="#" class="btn whatsapp-service" data-service="شاشات تلفزيون مدمجة">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="stairs.jpg" alt="الدرج والطاولات" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-stairs\' style=\'font-size: 60px; color: #d4af37;\'></i><br>الدرج والطاولات';">
+                    </div>
+                    <div class="service-content">
+                        <h3>الدرج والطاولات</h3>
+                        <p>تصميم وتركيب درج وطاولات مخصصة تناسب مساحتك وتصميمك الداخلي</p>
+                        <a href="#" class="btn whatsapp-service" data-service="الدرج والطاولات">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="insulation.jpg" alt="العوازل" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-thermometer-half\' style=\'font-size: 60px; color: #d4af37;\'></i><br>العوازل';">
+                    </div>
+                    <div class="service-content">
+                        <h3>العوازل</h3>
+                        <p>عوازل مائية وحرارية للمباني بمواد عالية الجودة وضمان طويل الأمد</p>
+                        <a href="#" class="btn whatsapp-service" data-service="العوازل">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+                
+                <!-- Service 10 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="epoxy.jpg" alt="أبوكسي أرضيات" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-border-all\' style=\'font-size: 60px; color: #d4af37;\'></i><br>أبوكسي أرضيات';">
+                    </div>
+                    <div class="service-content">
+                        <h3>أبوكسي أرضيات</h3>
+                        <p>تركيب أرضيات الإيبوكسي المتينة والجميلة للمصانع والمرائب والمنازل</p>
+                        <a href="#" class="btn whatsapp-service" data-service="أبوكسي أرضيات">اطلب عبر واتساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>معرض أعمالنا</h2>
+            </div>
+            
+            <!-- Social Media Mobile View -->
+            <div class="social-fixed-mobile">
+                <a href="https://www.instagram.com/abumst4?igsh=MTQ3YTJkZWp5YXMzOA==" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.tiktok.com/@abdu_5576?_r=1&_t=ZS-931CHsoZnRw" target="_blank" class="tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                
+                <a href="https://haraj.com.sa/shared-post/019b7ad0-23fd-7e11-a10f-c804f201764d/" target="_blank" class="haraj">
+                    <i class="fas fa-store"></i>
+                </a>
+                
+                <a href="https://k.kwai.com/u/@sfiun331/uucyCvic" target="_blank" class="kwai">
+                    <i class="fas fa-video"></i>
+                </a>
+                
+                <a href="https://wa.me/966508925576?text=مرحباً، أريد الاستفسار عن خدماتكم - تم تحويلي عبر موقع أبو مصطفى للدهانات والديكورات" class="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+                <a href="tel:+966508925576" class="phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- 24 صورة -->
+                <div class="gallery-item">
+                    <img src="work1.jpg" alt="عمل 1" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 1';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work2.jpg" alt="عمل 2" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 2';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work3.jpg" alt="عمل 3" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 3';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work4.jpg" alt="عمل 4" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 4';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work5.jpg" alt="عمل 5" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 5';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work6.jpg" alt="عمل 6" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 6';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work7.jpg" alt="عمل 7" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 7';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work8.jpg" alt="عمل 8" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 8';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work9.jpg" alt="عمل 9" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 9';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work10.jpg" alt="عمل 10" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 10';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work11.jpg" alt="عمل 11" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 11';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work12.jpg" alt="عمل 12" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 12';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work13.jpg" alt="عمل 13" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 13';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work14.jpg" alt="عمل 14" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 14';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work15.jpg" alt="عمل 15" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 15';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work16.jpg" alt="عمل 16" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 16';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work17.jpg" alt="عمل 17" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 17';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work18.jpg" alt="عمل 18" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 18';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work19.jpg" alt="عمل 19" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 19';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work20.jpg" alt="عمل 20" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 20';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work21.jpg" alt="عمل 21" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 21';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work22.jpg" alt="عمل 22" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 22';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work23.jpg" alt="عمل 23" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 23';">
+                </div>
+                <div class="gallery-item">
+                    <img src="work24.jpg" alt="عمل 24" onerror="this.style.display='none'; this.parentNode.innerHTML='عمل 24';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos" id="videos">
+        <div class="container">
+            <div class="section-title">
+                <h2>فيديوهات من أعمالنا</h2>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/aJWsRWA9FFg" title="فيديو من أعمالنا" allowfullscreen></iframe>
+                    <div class="video-caption">
+                        <h3>عملية تركيب ديكورات مبتكرة</h3>
+                    </div>
+                </div>
+                
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/-Rjr5ELIogQ" title="فيديو من أعمالنا" allowfullscreen></iframe>
+                    <div class="video-caption">
+                        <h3>تنفيذ أعمال دهانات عالية الجودة</h3>
+                    </div>
+                </div>
+                
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/rS9fQMa38T4" title="فيديو من أعمالنا" allowfullscreen></iframe>
+                    <div class="video-caption">
+                        <h3>تشطيب وتنسيق مساحات داخلية</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>آراء عملائنا</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "تعاملت مع أبو مصطفى لدهانات منزلي وكانت النتيجة رائعة، فريق العمل محترف والجودة ممتازة."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">أ</div>
+                        <div class="author-info">
+                            <h4>أحمد السعدي</h4>
+                            <p>مكة المكرمة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "شكراً لفريق أبو مصطفى على العمل الرائع في ترميم شقتي، أنصح الجميع بالتعامل معهم."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">س</div>
+                        <div class="author-info">
+                            <h4>سارة محمد</h4>
+                            <p>جدة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "خدمة ممتازة وأسعار منافسة، قاموا بتصميم ديكورات رائعة لمنزلي بتفاصيل دقيقة."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">خ</div>
+                        <div class="author-info">
+                            <h4>خالد الفهد</h4>
+                            <p>الطائف</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>الأسئلة الشائعة</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هي مدة تنفيذ مشروع الدهانات لمنزل متوسط؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>عادة ما تستغرق عملية دهان منزل متوسط من 3 إلى 7 أيام حسب المساحة ونوع الدهان المطلوب.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل تقدمون خدمة التصميم والديكور؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم خدمة التصميم والديكور الشاملة مع فريق متخصص في تصميم الديكورات الداخلية.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>ما هي ضمانات الخدمة التي تقدمونها؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقدم ضمان يصل إلى 5 سنوات على أعمال العوازل و3 سنوات على أعمال الدهانات وسنتين على أعمال الديكور.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>هل تقدمون خدمات في جميع مناطق مكة المكرمة وجدة والطائف؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم خدماتنا في جميع أحياء مكة المكرمة وجدة والطائف والمناطق المحيطة بها.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-title">
+                <h2>منطقة الخدمة</h2>
+            </div>
+            
+            <div class="location-content">
+                <div class="location-text">
+                    <h3>تواجدنا رسمياً: مكة المكرمة - جدة - الطائف</h3>
+                    <p>نقدم خدماتنا في مدينة مكة المكرمة وجدة والطائف وجميع المناطق المحيطة بها. فريقنا مدرب ومجهز للوصول إلى موقعك في الوقت المحدد وتنفيذ العمل بأعلى معايير الجودة.</p>
+                    <p>نغطي جميع المناطق بما في ذلك:</p>
+                    <ul>
+                        <li>مكة المكرمة وجميع أحيائها</li>
+                        <li>جدة والمناطق المحيطة بها</li>
+                        <li>الطائف والمناطق المجاورة</li>
+                        <li>نقدم خدماتنا لكافة العملاء في المنطقة الغربية</li>
+                    </ul>
+                </div>
+                
+                <div class="location-map">
+                    <img src="map.jpg" alt="خريطة منطقة الخدمة" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-map-marked-alt\' style=\'font-size: 80px; color: #d4af37;\'></i><br>خريطة منطقة الخدمة';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yemen Bot Section -->
+    <section class="yemen-bot">
+        <div class="container">
+            <h3>شركة يمن بوت للتقنيات والذكاء الاصطناعي</h3>
+            <p>نفخر بأن هذا الموقع تم تصميمه وتطويره بواسطة Yemen Bot AI</p>
+            <p class="small-text">
+                <a href="https://yemenbot.github.io/Ai/" target="_blank">اضغط هنا لطلب تصميم موقع إلكتروني مماثل</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>اتصل بنا</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+966508925576">+966508925576</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:yemenbotai@gmail.com">yemenbotai@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> مكة المكرمة - جدة - الطائف، المملكة العربية السعودية</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/abumst4?igsh=MTQ3YTJkZWp5YXMzOA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@abdu_5576?_r=1&_t=ZS-931CHsoZnRw" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://haraj.com.sa/shared-post/019b7ad0-23fd-7e11-a10f-c804f201764d/" target="_blank"><i class="fas fa-store"></i></a>
+                        <a href="https://k.kwai.com/u/@sfiun331/uucyCvic" target="_blank"><i class="fas fa-video"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><a href="#">الدهانات الداخلية والخارجية</a></li>
+                        <li><a href="#">أعمال الترميم</a></li>
+                        <li><a href="#">الديكورات</a></li>
+                        <li><a href="#">ورق الجدران</a></li>
+                        <li><a href="#">الجبس بورد والأسمنت بورد</a></li>
+                        <li><a href="#">المرايا والتكسيات</a></li>
+                        <li><a href="#">شاشات تلفزيون مدمجة</a></li>
+                        <li><a href="#">الدرج والطاولات</a></li>
+                        <li><a href="#">العوازل</a></li>
+                        <li><a href="#">أبوكسي أرضيات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#gallery">معرض الأعمال</a></li>
+                        <li><a href="#videos">فيديوهات</a></li>
+                        <li><a href="#testimonials">آراء العملاء</a></li>
+                        <li><a href="#location">منطقة الخدمة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>تم تصميم هذا الموقع بواسطة <a href="https://wa.me/967779313305" class="yemen-bot-link" style="color: var(--primary-color);">Yemen Bot Ai</a> &copy; <span id="current-year"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/966508925576?text=مرحباً، أريد الاستفسار عن خدماتكم - تم تحويلي عبر موقع أبو مصطفى للدهانات والديكورات" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Call Button -->
+    <a href="tel:+966508925576" class="call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Update Date and Time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            const dateTimeString = now.toLocaleDateString('ar-SA', options);
+            document.getElementById('current-date-time').textContent = dateTimeString;
+        }
+        
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // WhatsApp service buttons
+        document.querySelectorAll('.whatsapp-service').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const service = this.getAttribute('data-service');
+                const message = `مرحباً، أريد الاستفسار عن خدمة ${service} - تم تحويلي عبر موقع أبو مصطفى للدهانات والديكورات`;
+                const whatsappUrl = `https://wa.me/966508925576?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+        
+        // Yemen Bot AI link
+        document.querySelector('.yemen-bot-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const message = "مرحباً، أريد الاستفسار عن خدماتكم - تم تحويلي عبر موقع أبو مصطفى للدهانات والديكورات";
+            const whatsappUrl = `https://wa.me/967779313305?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+        
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+                
+                const icon = question.querySelector('i');
+                if (answer.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // Back to top functionality
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+        });
+    </script>
+</body>
+</html>
